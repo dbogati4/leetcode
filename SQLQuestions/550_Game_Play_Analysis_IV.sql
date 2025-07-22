@@ -9,4 +9,4 @@ JOIN
 FROM Activity
 GROUP BY player_id) AS A3
 ON A3.player_id = A1.player_id
-AND A3.event_date = A2.event_date
+AND A3.event_date = A2.event_date;
