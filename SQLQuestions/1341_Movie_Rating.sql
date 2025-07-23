@@ -14,7 +14,8 @@ GROUP BY M.movie_id)
 SELECT MIN(name) AS results
 FROM cte1
 WHERE rating_cnt = (
-    SELECT MAX(rating_cnt) FROM cte1)
+    SELECT MAX(rating_cnt) FROM cte1
+)
 UNION ALL
 SELECT MIN(title) AS results
 FROM cte2
